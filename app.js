@@ -1,25 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.carousel-images img');
-    if (slides && slides.length > 0) {
-        let currentSlide = 0;
-
-        function showSlide(index) {
-            if (slides.length === 0) return;
-            if (index >= slides.length) currentSlide = 0;
-            if (index < 0) currentSlide = slides.length - 1;
-            slides.forEach((slide) => slide.classList.remove('active'));
-            slides[currentSlide]?.classList.add('active');
-        }
-
-        window.changeSlide = function (direction) {
-            currentSlide += direction;
-            showSlide(currentSlide);
-        };
-
-        showSlide(currentSlide);
-    }
-
-
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
@@ -36,13 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             contactForm.reset();
-        });
-    }
-
-    const homeButton = document.getElementById('homeButton');
-    if (homeButton) {
-        homeButton.addEventListener('click', function () {
-            window.location.href = 'index.html';
         });
     }
 });
