@@ -2,7 +2,7 @@
 
 O Markeasy é uma plataforma que visa simplificar o processo de contratação e conexão entre empresas e profissionais de marketing digital freelance. Nosso foco é oferecer segurança, transparência e agilidade para transformar ideias em resultados concretos.
 
----
+----
 
 ## 💡 Premissa e Visão do Projeto
 
